@@ -1,0 +1,20 @@
+managed implementation in class zbp_i_prvd_eco_demo_sflight unique;
+strict ( 2 );
+
+define behavior for ZI_PRVD_ECO_DEMO_SFLIGHT //alias <alias_name>
+persistent table SFLIGHT
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+   //actions
+  action ( features : instance ) aggregateCarbon result [1] $self;
+  action ( features : instance ) retireCarbon result [1] $self;
+  action ( features : instance ) proofOfAtomicOffset result [1] $self;
+
+  //determinations
+}
