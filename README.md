@@ -50,12 +50,13 @@ Open the Fiori elements preview
 You can also preview, build, and deploy the corresponding SAPUI5 app in [this repo](https://github.com/fleischr/carbonmark-sapui5-demo)
 
 ## Recommendation 
-Review the Provide ECO API Resource Hub for more important details on the Carbonmark API and other integrations
+Review the [Provide ECO API Resource Hub](https://github.com/provideplatform/eco-api-resources) for more important details on the Carbonmark API and other integrations
 
 ## Next steps
 Ready to integrate to your dev, QA, or production SAP environment? Contact Ryan (ryan@provide.services) and Liam (liam@carbonmark.com) for more details!
 
 Discover more and see it action!
 
+Youtube:
 
 [![Carbonmark SAP integrations with Provide Payments](https://img.youtube.com/vi/O8dsJc8QVhM/0.jpg)](https://www.youtube.com/embed/O8dsJc8QVhM?si=adJAchxp4hVvaTJR&amp;start=692)
