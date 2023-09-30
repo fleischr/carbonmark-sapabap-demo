@@ -55,6 +55,4 @@ Review the Provide ECO API Resource Hub for more important details on the Carbon
 Ready to integrate to your dev, QA, or production SAP environment? Contact Ryan (ryan@provide.services) and Liam (liam@carbonmark.com) for more details!
 
 Discover more and see it action!
-[![Carbonmark SAP integrations with Provide Payments](https://img.youtube.com/vi/O8dsJc8QVhM?si=adJAchxp4hVvaTJR/0.jpg)](https://www.youtube.com/embed/O8dsJc8QVhM?si=adJAchxp4hVvaTJR&amp;start=692)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O8dsJc8QVhM?si=adJAchxp4hVvaTJR&amp;start=692" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Carbonmark SAP integrations with Provide Payments](https://img.youtube.com/vi/O8dsJc8QVhM/0.jpg)](https://www.youtube.com/embed/O8dsJc8QVhM?si=adJAchxp4hVvaTJR&amp;start=692)
