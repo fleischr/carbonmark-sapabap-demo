@@ -45,8 +45,11 @@ This application demonstrates integration of the Carbonmark Offset API to carbon
 Steps 7 an 8 populate your Provide credentials to the SAP system. 
 
 ## Tech how-to
+
 Activate the oData service
+
 Open the Fiori elements preview
+
 You can also preview, build, and deploy the corresponding SAPUI5 app in [this repo](https://github.com/fleischr/carbonmark-sapui5-demo)
 
 ## Recommendation 
