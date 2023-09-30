@@ -18,9 +18,30 @@ This application demonstrates integration of the Carbonmark Offset API to carbon
 - Benefit from blockchain's advantages in carbon offset retirements with zero risk exposure to holding digital assets
 - Maintain privacy and high fidelity of your public data disclosures with Provide's tools in RSA encryption and zero knowledge cryptography
 
-## Requirements
-Installation of the [provide-abap SDK])(https://github.com/provideplatform/provide-abap) in your chosen SAP system
-This app targets usage of the RESTful ABAP programming model for on-premise SAP S/4 HANA system. Additional details on integration with SAP BTP are coming soon!
+## Pre requisites (do these first before running code!)
+- Clone [provide-abap](https://github.com/provideplatform/provide-abap) to your SAP system
+- Activate the provide-abap SICF node
+- In transaction code STRUST, configure the SSL certificates needed for Provide stack (see certificates directory of the provide-abap repo)
+- Create an account at https://shuttle.provide.services. Create organization at minimum (workgroup creation is recommended but optional)
+
+## Configuration
+
+### Postman configuration
+- Import the provided Postman collection. 
+- Maintain the shuttle_email and shuttle_password collection variables accordingly
+- Maintain SAP user id and password in the Postman collection
+- Enter the web dispatcher base url (ex: fiorilaunchpad.mycompany.com) to the sapbaseurl collection variable
+- Run the HTTP requests in the following order:
+1. Get access token with login
+2. List organizations
+3. Generate long-dated refresh token
+4. Get access token from refresh token
+5. Create account (Do both Polygon Mumbai and Celo Alfajores)
+6. List accounts (take note of the address field for later!)
+7. SAP / provide-abap fetch token
+8. SAP / provide-abap tenants create
+
+Steps 7 an 8 populate your Provide credentials to the SAP system. 
 
 ## Tech how-to
 Activate the oData service
@@ -34,4 +55,6 @@ Review the Provide ECO API Resource Hub for more important details on the Carbon
 Ready to integrate to your dev, QA, or production SAP environment? Contact Ryan (ryan@provide.services) and Liam (liam@carbonmark.com) for more details!
 
 Discover more and see it action!
+[![Carbonmark SAP integrations with Provide Payments](https://img.youtube.com/vi/O8dsJc8QVhM?si=adJAchxp4hVvaTJR/0.jpg)](https://www.youtube.com/embed/O8dsJc8QVhM?si=adJAchxp4hVvaTJR&amp;start=692)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8dsJc8QVhM?si=adJAchxp4hVvaTJR&amp;start=692" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
