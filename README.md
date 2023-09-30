@@ -22,7 +22,8 @@ This application demonstrates integration of the Carbonmark Offset API to carbon
 - Clone [provide-abap](https://github.com/provideplatform/provide-abap) to your SAP system
 - Activate the provide-abap SICF node
 - In transaction code STRUST, configure the SSL certificates needed for Provide stack (see certificates directory of the provide-abap repo)
-- Create an account at https://shuttle.provide.services. Create organization at minimum (workgroup creation is recommended but optional)
+- Create an account at https://shuttle.provide.services. Create organization at minimum (workgroup creation is recommended but optional).
+- You can also [generate credentials manually with Postman](https://github.com/provideplatform/eco-api-resources/blob/main/postman/Carbonmark%20API%20-%20Provide%20Payments%20User%20signup.postman_collection.json). 
 
 ## Configuration
 
@@ -55,4 +56,6 @@ Review the Provide ECO API Resource Hub for more important details on the Carbon
 Ready to integrate to your dev, QA, or production SAP environment? Contact Ryan (ryan@provide.services) and Liam (liam@carbonmark.com) for more details!
 
 Discover more and see it action!
+
+
 [![Carbonmark SAP integrations with Provide Payments](https://img.youtube.com/vi/O8dsJc8QVhM/0.jpg)](https://www.youtube.com/embed/O8dsJc8QVhM?si=adJAchxp4hVvaTJR&amp;start=692)
