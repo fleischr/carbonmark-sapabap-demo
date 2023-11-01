@@ -1,0 +1,120 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZC_PRVD_ECO_DEMO_0902
+    with 
+{
+      @UI.facet: [ { id:              'Flights',
+                     purpose:         #STANDARD,
+                     type:            #IDENTIFICATION_REFERENCE,
+                     label:           'Flights',
+                     position:        10 } ]
+    @UI.lineItem: [{
+        position: 10 ,
+        importance: #HIGH
+    }]
+    CarrierID;
+    @UI.lineItem: [{
+        position: 10 ,
+        importance: #HIGH
+    }]
+    ConnectionID;
+    @UI.lineItem: [{
+        position: 20 ,
+        importance: #HIGH
+    }]
+    FlightDate;
+    @UI.lineItem: [{
+        position: 30 ,
+        importance: #HIGH
+    }]
+    PlaneType;
+    @UI.lineItem: [{
+        position: 40 ,
+        importance: #HIGH
+    }]
+    CarbonAmount;
+        @UI.lineItem: [{
+        position: 50 ,
+        importance: #HIGH
+    }]
+    CarbonUom;
+    @EndUserText: {
+        label: 'Carbon Aggr ',
+        quickInfo: 'Indicates if flight has carbon emissions tracked'
+    }
+    @UI.lineItem: [{
+        position: 60 ,
+        importance: #HIGH
+    }, { type: #FOR_ACTION, dataAction: 'aggregateCarbon', label: 'Aggregate Carbon' }]
+    hasCarbonAggregate;
+    @EndUserText: {
+        label: 'Atomic Offset',
+        quickInfo: 'Indicates if flight has carbon offset'
+    }
+    @UI.lineItem: [{
+        position: 70 ,
+        importance: #HIGH
+    },{ type: #FOR_ACTION, dataAction: 'retireCarbon', label: 'Retire Carbon' }, { type: #WITH_URL, url: 'RetirementPageURL' }]
+    hasAtomicOffset;
+    @EndUserText: {
+        label: 'Axiom',
+        quickInfo: 'Indicates if atomic offset has zk-proof'
+    }
+    @UI.lineItem: [{
+        position: 80 ,
+        importance: #HIGH
+    },{ type: #FOR_ACTION, dataAction: 'proofOfAtomicOffset', label: 'Generate Proof' }, { type: #WITH_URL, url: 'ShuttleURL' }]
+    hasPoAO;
+    @UI.lineItem: [{
+        position: 90 ,
+        importance: #HIGH
+    }]
+    MaxSeatsEconomy;
+    @UI.lineItem: [{
+        importance: #LOW
+    }]
+    MaxSeatsBusinessClass;
+    @UI.lineItem: [{
+        importance: #LOW
+    }]
+    MaxSeatsFirstClass;
+    @UI.lineItem: [{
+        importance: #LOW
+    }]
+    Currency;
+    @UI.lineItem: [{
+        importance: #LOW
+    }]
+    OccupiedEconomy;
+    @UI.lineItem: [{
+        importance: #LOW
+    }]
+    OccupiedBusinessClass;
+    @UI.lineItem: [{
+        importance: #LOW
+    }]
+    OccupiedFirstClass;
+    @UI.lineItem: [{
+        importance: #LOW
+    }]
+    @UI.hidden: true
+    Sflight_ID;
+    /* Associations */
+    @UI.facet: [ { id:              'CarbonAggregate',
+                     purpose:         #STANDARD,
+                     type:            #IDENTIFICATION_REFERENCE,
+                     label:           'Carbon Aggregate',
+                     position:        20 } ]
+    _CarbonAggregate;
+    @UI.facet: [ { id:              'CarbonRetirement',
+                     purpose:         #STANDARD,
+                     type:            #IDENTIFICATION_REFERENCE,
+                     label:           'Carbon Retirement',
+                     position:        30 } ]
+    _carbonretirement;  
+    @UI.facet: [ { id:              'AtomicOffset',
+                     purpose:         #STANDARD,
+                     type:            #IDENTIFICATION_REFERENCE,
+                     label:           'Atomic Offset',
+                     position:        140 } ]
+    _atomicoffset;  
+}
