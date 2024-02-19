@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Provide ECO SFLIGHT demo'
+define service ZUI_C_PRVD_ECO_DEMO_0902 {
+  expose ZC_PRVD_ECO_DEMO_0902 as FlightData;
+}
